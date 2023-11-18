@@ -17,4 +17,6 @@ waiter.until(
 )
 all_imgs = driver.find_elements(By.CSS_SELECTOR, '#image-container>img')
 atr = all_imgs[2].get_attribute('src')
+driver.quit()
+
 print(atr)
